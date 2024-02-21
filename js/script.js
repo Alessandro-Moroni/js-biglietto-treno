@@ -1,10 +1,10 @@
-const chilometri = prompt('Quanti chilometri devi percorrere?');
+let chilometri = prompt('Quanti chilometri devi percorrere?');
 
-const eta = prompt('Quanti anni hai?');
+let eta = prompt('Quanti anni hai?');
 
 const costoChilometri = 0.21;
 
-let costoBiglietto = (chilometri * costoChilometri).toFixed(2);
+let costoBiglietto = (chilometri * costoChilometri);
 
 
 
@@ -17,6 +17,6 @@ if(eta > 65) {
 
 document.getElementById('user').innerHTML = `
 <p>
-Il costo del tuo biglietto è di ${costoBiglietto}€ e percorrerai ${chilometri} km.
+Il costo del tuo biglietto è di ${costoBiglietto.toFixed(2)}€ e percorrerai ${chilometri} km.
 </p>
 `;

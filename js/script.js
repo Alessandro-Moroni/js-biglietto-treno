@@ -1,6 +1,6 @@
-let chilometri = prompt('Quanti chilometri devi percorrere?');
+let chilometri = parseInt(prompt('Quanti chilometri devi percorrere?'));
 
-let eta = prompt('Quanti anni hai?');
+let eta = parseInt(prompt('Quanti anni hai?'));
 
 const costoChilometri = 0.21;
 
